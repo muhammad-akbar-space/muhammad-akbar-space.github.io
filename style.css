@@ -1,0 +1,129 @@
+/* ========== PREMIUM PORTFOLIO STYLE ========== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0d1117;
+    color: #e5e7eb;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(59,130,246,0.1), transparent);
+    pointer-events: none;
+}
+
+.profile {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid #3b82f6;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(59,130,246,0.4);
+    margin-bottom: 20px;
+    animation: pop 0.6s ease;
+}
+
+@keyframes pop {
+    0% { transform: scale(0.6); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* ========== SECTIONS ========== */
+.section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #111827;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.05);
+    animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+    0% { transform: translateY(40px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #60a5fa;
+    text-shadow: 0 0 8px rgba(96,165,250,0.5);
+}
+
+/* ========== SKILL GRID ========== */
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+}
+
+.skill-grid span {
+    background: #1e293b;
+    padding: 12px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.1);
+    font-weight: 600;
+    transition: .3s;
+}
+
+.skill-grid span:hover {
+    background: #3b82f6;
+    box-shadow: 0 0 15px rgba(59,130,246,0.7);
+    transform: translateY(-5px);
+}
+
+/* ========== PROJECT GRID ========== */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1f2937;
+    padding: 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: .3s;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+.card h3 {
+    margin: 0;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    background: #3b82f6;
+    box-shadow: 0 0 20px rgba(59,130,246,0.6);
+}
+
+/* ========== FOOTER ========== */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #65768b;
+    font-size: 14px;
+}
